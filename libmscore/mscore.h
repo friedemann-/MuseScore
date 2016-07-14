@@ -518,6 +518,8 @@ class MScore : public QObject {
       static qreal horizontalPageGapEven;
       static qreal horizontalPageGapOdd;
 
+      static bool scandinavianInput;
+
 #ifdef SCRIPT_INTERFACE
       static QQmlEngine* qml();
 #endif
