@@ -3054,6 +3054,7 @@ void MuseScore::changeState(ScoreState val)
       cpitchTools->setEnabled(enable);
       mag->setEnabled(enable);
       entryTools->setEnabled(enable);
+      scandinavianTools->setEnabled(enable);
 
       if (_sstate == STATE_FOTO)
             updateInspector();
@@ -4807,6 +4808,9 @@ void MuseScore::cmd(QAction* a, const QString& cmd)
                         switchLayoutMode(LayoutMode::PAGE);
                   }
             }
+      else if (cmd == "scandinavian-input") {
+            MScore::scandinavianInput = a->isChecked();
+      }
 #ifndef NDEBUG
       else if (cmd == "no-horizontal-stretch") {
             MScore::noHorizontalStretch = a->isChecked();

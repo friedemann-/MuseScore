@@ -2170,6 +2170,17 @@ Shortcut Shortcut::_sc[] = {
          Qt::WindowShortcut,
          ShortcutFlags::A_CMD
          },
+    {
+       MsWidget::MAIN_WINDOW,
+       STATE_NORMAL | STATE_NOTE_ENTRY,
+       "scandinavian-input",
+       QT_TRANSLATE_NOOP("action","Scandinavian Input"),
+       QT_TRANSLATE_NOOP("action","Scandinavian Input Scheme"),
+       0,
+       Icons::Invalid_ICON,
+       Qt::WindowShortcut,
+       ShortcutFlags::A_CMD
+       },
       {
          MsWidget::MAIN_WINDOW,
          STATE_NORMAL | STATE_NOTE_ENTRY,
